@@ -17,7 +17,6 @@ body {
 	.board-container {
 		overflow-x: auto;
 		white-space: nowrap;
-
 		padding: 5px;
 	}
 
@@ -207,8 +206,6 @@ body {
 				&.item-trade { background-image: url(assets/images/menu-icon-trade.png); }
 				&.item-boards { background-image: url(assets/images/menu-icon-boards.png); }
 			}
-
-
 		}
 	}
 }
