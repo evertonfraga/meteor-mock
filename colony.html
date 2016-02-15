@@ -1,0 +1,106 @@
+<head>
+  <title>colony</title>
+</head>
+
+<body>
+	<div class="grid">
+		{{>sidebarMenu}}
+		<div class="board-container">
+				{{>board}}
+				{{>board}}
+				{{>board}}
+				{{>board}}
+				{{>board}}
+		</div>
+	</div>
+
+
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
+
+
+<template name="sidebarMenu">
+	<aside class="sidebar-menu">
+		<h1>Meta Project</h1>
+		
+		<header>
+			<h2>My Tasks</h2>
+			<a href="javascript:void(0)" class="">Show Recent activity</a>
+		</header>
+
+		<ul class="team-members">
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li> <a href="javascript:void(0)"> <img src="assets/images/team-member.png" alt=""> </a> </li>
+			<li class="add-person">
+				<a href="javascript:void(0)">
+					<img src="assets/images/add-icon.png" alt="">
+				</a>
+			</li>
+		</ul>
+
+		<menu>
+			<ul>
+				<li>
+					<a class="item-docs" href="javascript:void(0)">Docs</a>
+				</li>
+				<li>
+					<a class="item-files" href="javascript:void(0)">Files</a>
+				</li>
+				<li>
+					<a class="item-trade" href="javascript:void(0)">Trade</a>
+				</li>
+				<li>
+					<a class="item-boards" href="javascript:void(0)">Boards</a>
+				</li>
+			</ul>
+		</menu>
+
+	</aside>
+</template>
+
+<template name="board">
+	<section class="board">
+		<header>
+			<h2>My Tasks</h2>
+		</header>
+		<section>
+			<ul class="tasks">
+				<li> {{> taskCard}} </li>
+				<li> {{> taskCard}} </li>
+				<li> {{> taskCard}} </li>
+			</ul>
+		</section>
+		<footer>
+			<a href="javascript:void(0)">Add a card...</a>
+		</footer>
+	</section>
+</template>
+
+<template name="taskCard">
+	<section class="task-card">
+		<header>
+			<span class="due-date">16 Jan</span>
+			<span class="bounty">B$ 2.6755</span>
+		</header>
+		<section>
+			<p class="description">
+				Subject to Functionality plan, assess required resources and calculate milestones &amp; burndown.
+			</p>
+		</section>
+		<footer>
+			<ul class="tags">
+				<li><a href="javascript:void(0)">C++</a></li>
+				<li><a href="javascript:void(0)">Javascript</a></li>
+				<li><a href="javascript:void(0)">Bitcoin</a></li>
+			</ul>
+		</footer>
+	</section>
+</template>
